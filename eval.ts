@@ -1,6 +1,6 @@
 import { Eval } from "braintrust";
 import { NumericDiff } from "autoevals";
-import { runInventoryAgent } from "./agent";
+import { runInventoryAgent } from "./agent.js";
 
 Eval("Inventory-Optimization-v1", {
   data: () => [

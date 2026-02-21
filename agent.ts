@@ -1,8 +1,8 @@
 import { initLogger } from "braintrust";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { InventoryRecommendationSchema } from "./schema";
+import { InventoryRecommendationSchema } from "./schema.js";
 
-const logger = initLogger({ project: "Grocery-Inventory-Optimizer" });
+const logger = initLogger({ projectId: "Grocery-Inventory-Optimizer" });
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
 export async function runInventoryAgent(inventoryData: any, wasteLogs: any) {
